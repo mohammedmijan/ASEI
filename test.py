@@ -1,6 +1,10 @@
-import Constants
+from data import *
+from data import Constants
 
-coo = Constants.column_names
-lis = []
-for i, value in enumerate(coo):
-    print(f"{i}:{value}")
+
+server.Company_data_saving(companies=Constants.companies)
+for ccc in Constants.Engineering_companies:
+    print(data_sorting(ccc))
+
+for ccc in Constants.It_companies:
+    print(data_sorting(ccc))
